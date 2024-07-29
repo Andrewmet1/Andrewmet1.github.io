@@ -1,3 +1,23 @@
+/* General Styles */
+body {
+    font-family: 'Garamond', serif;
+    background-image: url('../images/wrinkled-white-paper-background.jpg');
+    background-size: cover;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header, section, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Headings */
 h1 {
     text-transform: uppercase;
@@ -19,8 +39,6 @@ h2 {
     text-shadow: .09375rem .09375rem .09375rem #000;
     font-family: 'Alfa Slab One', Garamond, serif;
     text-align: center;
-    font-size: 3rem;
-    letter-spacing: 0.25rem;
     font-weight: normal;
 }
 
