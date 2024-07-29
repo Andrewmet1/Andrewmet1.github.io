@@ -19,7 +19,12 @@ header, section, footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 6rem;
