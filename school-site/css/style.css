@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Header Styling */
@@ -22,35 +23,36 @@ header {
     padding: 20px 0;
 }
 
-/* Layout Container */
-.container {
-    display: flex;
-    flex: 1;
-    width: 100%;
-}
-
 /* Navigation Layout */
 nav {
     width: 180px;
     padding: 20px;
-    border-right: 2px solid #000;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: fixed; /* Fix the navigation to the side */
-    top: 120px; /* Adjust top position based on header height */
-    left: 0;
-    height: calc(100vh - 140px); /* Fill the height minus header and footer */
-    background-color: #fff;
 }
 
 /* Main Content Layout */
 main {
-    margin-left: 220px; /* Space to account for the fixed nav */
-    padding: 20px;
-    width: calc(100% - 240px); /* Adjust for nav and padding */
     display: flex;
-    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Section Layout */
+section {
+    width: 100%;
+    padding: 0 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Sidebar (Right) Content */
+aside {
+    width: 220px;
+    margin-left: 40px;
 }
 
 /* Footer Styling */
@@ -135,16 +137,22 @@ figure img {
     margin: 0 auto;
 }
 
-/* Section and Border Styling */
-section {
-    width: 48%;
+/* Right Sidebar List Styling */
+aside ul {
+    list-style: none;
+    padding: 0;
 }
 
-section:nth-child(2) {
-    border-left: 2px solid #000;
-    padding-left: 20px;
+aside ul li {
+    margin-bottom: 8px;
 }
 
-section:nth-child(1) {
-    padding-right: 20px;
+aside ul li a {
+    text-decoration: none;
+    color: #33658A;
+    font-size: 14px;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
 }
