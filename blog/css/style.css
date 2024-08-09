@@ -23,14 +23,14 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem; /* Increase font size for the header */
     color: #333;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 header h1 .highlight {
-    font-size: 4rem;
+    font-size: 5rem; /* Larger font size for the highlight */
     color: #a52a2a;
     background-color: #fff;
     padding: 0 10px;
@@ -45,7 +45,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px; /* Adjust gap for spacing */
     margin: 20px 0;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
@@ -65,12 +65,13 @@ nav ul li a:hover, nav ul li a:focus {
 
 main {
     display: flex;
-    gap: 40px;
+    gap: 20px; /* Narrower gap between sections */
     margin-top: 20px;
 }
 
 article {
-    flex: 2;
+    flex: 3; /* More space for the article */
+    margin-right: 20px; /* Margin to separate from sidebar */
 }
 
 .article-image {
@@ -84,7 +85,7 @@ article p {
 }
 
 article h2 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increase font size for h2 */
     margin-bottom: 20px;
     color: #333;
     text-transform: uppercase;
@@ -94,7 +95,7 @@ article h2 {
 }
 
 article h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increase font size for h3 */
     margin-bottom: 10px;
     color: #a52a2a;
     text-transform: uppercase;
@@ -150,7 +151,7 @@ article img {
 }
 
 aside {
-    flex: 1;
+    flex: 1; /* Sidebar takes less space */
 }
 
 .sidebar-item {
