@@ -25,10 +25,11 @@ html {
 h1 {
     font-family: 'Josefinslab', serif;
     font-size: 3.75rem; /* 60px */
-    margin: 1.125rem; /* 18px */
+    margin: 1.125rem 0; /* 18px top and bottom */
     text-align: center;
     letter-spacing: 0.125rem; /* 2px */
     border-bottom: 2px solid #000;
+    padding-bottom: 1rem;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
     font-size: 1.5rem; /* 24px */
     letter-spacing: 0.125rem; /* 2px */
     margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 p {
@@ -104,18 +106,23 @@ nav {
     margin-top: 0.25rem; /* 4px */
     border-right: 2px solid #000;
     padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 nav a {
     text-decoration: none;
     display: block;
-    width: 100%;
     padding: 0.75rem 1rem;
     text-align: center;
     font-size: 1.125rem; /* 18px */
     margin-bottom: 1rem; /* 24px */
     border: 1px solid #33658A;
     color: #33658A;
+    background-color: #FFF;
 }
 
 nav a:focus,
