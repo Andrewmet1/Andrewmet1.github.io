@@ -22,6 +22,7 @@ header {
 header h1 {
     font-size: 3rem;
     color: #333;
+    text-transform: uppercase;
 }
 
 header h1 .highlight {
@@ -36,6 +37,7 @@ nav ul {
     justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
+    border-bottom: 2px solid #333;
 }
 
 nav ul li {
@@ -55,12 +57,17 @@ nav ul li a:hover {
 
 main {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
 }
 
 article {
     flex: 2;
+}
+
+.article-image {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
 }
 
 article img {
@@ -114,26 +121,41 @@ footer p {
     color: #777;
 }
 
-/* Additional Styles */
-.main-section {
+.subsection {
     display: flex;
     justify-content: space-between;
 }
 
-.article-image {
-    float: left;
-    margin-right: 20px;
-    width: 50%;
+.subsection figure {
+    width: 30%;
 }
 
-.subsection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+.subscribe-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #33658A;
+    color: #FFF;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.subscribe-button:hover {
+    background-color: #28507b;
 }
 
 .expand {
     display: block;
     margin-top: 20px;
     text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.expand:hover {
+    color: #d9534f;
 }
