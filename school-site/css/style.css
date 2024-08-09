@@ -51,9 +51,40 @@ section {
     width: 60%;
 }
 
-/* Right Sidebar for List and Image */
+/* Right Sidebar for Image and List */
 aside {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0; /* Align list directly under the image */
+    width: 100%;
+}
+
+aside ul li {
+    margin-bottom: 8px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #33658A;
+    font-size: 14px;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Footer Styling */
@@ -117,43 +148,4 @@ ul, ol {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 20px;
-}
-
-figcaption {
-    font-size: 12px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Right Sidebar List Styling */
-aside ul {
-    list-style: none;
-    padding: 0;
-}
-
-aside ul li {
-    margin-bottom: 8px;
-}
-
-aside ul li a {
-    text-decoration: none;
-    color: #33658A;
-    font-size: 14px;
-}
-
-aside ul li a:hover {
-    text-decoration: underline;
 }
