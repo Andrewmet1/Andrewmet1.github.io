@@ -27,6 +27,7 @@ header h1 {
     color: #333;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 header h1 .highlight {
@@ -38,6 +39,8 @@ header h1 .highlight {
     top: -20px;
     z-index: 1;
     box-shadow: 0px 5px 0px #333;
+    display: inline-block;
+    font-weight: bold;
 }
 
 nav ul {
@@ -70,7 +73,7 @@ main {
 }
 
 article {
-    flex: 2;
+    flex: 3;
 }
 
 .article-image {
@@ -87,12 +90,18 @@ article h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #a52a2a;
+    padding-bottom: 10px;
 }
 
 article h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #a52a2a;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 article img {
@@ -102,28 +111,30 @@ article img {
     border: 1px solid #ccc;
 }
 
-aside {
-    flex: 1;
+/* New styling for right-aligned gallery */
+.right-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: auto;
 }
 
-.sidebar-item {
-    margin-bottom: 40px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: 1px solid #ddd;
+.gallery-item {
+    width: 100%;
+    text-align: center;
 }
 
-.sidebar-item img {
+.gallery-item img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
-.sidebar-item h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #333;
+.gallery-item figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
 }
 
 footer {
@@ -136,29 +147,6 @@ footer {
 footer p {
     font-size: 0.9rem;
     color: #777;
-}
-
-.subsection {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-
-.subsection figure {
-    width: 32%;
-}
-
-.subsection img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-}
-
-.subsection figcaption {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
 }
 
 .subscribe-button {
