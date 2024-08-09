@@ -7,12 +7,14 @@
 
 /* General Layout */
 body {
-    display: flex;
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+/* Header Styling */
 header {
     text-align: center;
     width: 100%;
@@ -21,8 +23,9 @@ header {
     padding: 20px 0;
 }
 
+/* Navigation Layout */
 nav {
-    width: 200px;
+    width: 180px;
     padding: 20px;
     border-right: 2px solid #000;
     display: flex;
@@ -30,15 +33,19 @@ nav {
     gap: 10px;
 }
 
+/* Main Content Layout */
 main {
     display: flex;
+    width: 80%;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
     flex: 1;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
+    width: 100%;
     border-top: 2px solid #000;
     padding: 10px 0;
     margin-top: 20px;
@@ -48,12 +55,11 @@ footer {
 nav a {
     display: block;
     padding: 10px;
-    border: 1px solid #33658A;
+    border: 2px solid #33658A;
     color: #33658A;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 nav a:hover {
@@ -68,28 +74,28 @@ nav a:active {
 
 /* Typography and Content Styling */
 h1 {
-    font-family: 'Josefinslab', serif;
-    font-size: 60px;
-    letter-spacing: 2px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 48px;
+    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-family: 'Josefinslab', serif;
+    font-family: 'Josefin Slab', serif;
     font-size: 24px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 p, li {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    word-spacing: 2px;
+    word-spacing: 1.5px;
     margin-bottom: 15px;
 }
 
 h2 + p {
-    text-indent: 24px;
+    text-indent: 20px;
 }
 
 ul, ol {
@@ -129,11 +135,4 @@ section:nth-child(2) {
 
 section:nth-child(1) {
     padding-right: 20px;
-}
-
-footer {
-    text-align: center;
-    border-top: 2px solid black;
-    padding-top: 20px;
-    margin-top: 20px;
 }
